@@ -1,0 +1,1 @@
+//Write a js to print multiplication table for a number prompted from user
