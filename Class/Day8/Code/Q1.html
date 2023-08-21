@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form">
+        NUMBER 1 : <input type="text" name="tbl1"><br> <br>
+        NUMbER 2 : <input type="text" name="tbl2"><br> <br>
+
+    <input type="button" value="Addition" onclick="Add(document.form.tbl1.value,document.form.tbl2.value)">
+    <input type="button" value="Subtraction" onclick="sub(document.form.tbl1.value,document.form.tbl2.value)">
+    result: <input type="text" name="tbl3">
+    </form>
+    <script>
+        function Add(n1,n2)
+        {
+            n1= parseFloat(n1);
+            n2= parseFloat(n2);
+            document.form.tbl3.value = n1 + n2;
+        }
+        function sub(n1,n2)
+        {
+            n1= parseFloat(n1);
+            n2= parseFloat(n2);
+            document.form.tbl3.value = n1 - n2;
+        }
+        
+    </script>
+</body>
+</html>
