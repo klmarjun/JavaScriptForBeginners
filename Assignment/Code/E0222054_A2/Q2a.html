@@ -1,0 +1,26 @@
+<!--//Write a javascript to display whether a number is prime or not in alert box.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Q2a</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var num = prompt("Enter a number");
+        var flag = 0;
+        for(var i=2; i<num; i++){
+            if(num%i == 0){
+                flag = 1;
+                break;
+            }
+        }
+        if(flag == 0){
+            alert(num + " is a prime number");
+        }
+        else{
+            alert(num + " is not a prime number");
+        }
+    </script>
+</body>
+</html>
