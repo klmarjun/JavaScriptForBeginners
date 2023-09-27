@@ -1,0 +1,11 @@
+doctype html 
+head 
+    title Students detail to mongodb 
+body 
+    h1 Submit student details to MongoDB 
+    form(action = '/submit' method = 'post')
+        label(for = 'name') Name: 
+        input(type = 'text' name = 'name' required)
+        label(for = 'email') Email:
+        input(type = 'email' name = 'email' required)
+        button(type = 'submit') Submit

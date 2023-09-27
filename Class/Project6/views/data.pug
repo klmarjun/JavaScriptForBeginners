@@ -1,0 +1,19 @@
+doctype html 
+html 
+    head 
+        title Students Record from MongoDB 
+    body 
+        h1 Students record from MongoDB 
+        form(action = '/data' method = 'GET')
+            label(for = 'search') Search by email: 
+            input (type = 'email' name = 'search')
+            button(type = 'submit') Search 
+        ul  
+            each record in records
+                li 
+                    strong Name: 
+                    span = record.name 
+                    br
+                    strong email: 
+                    span = record.mail 
+                    br
