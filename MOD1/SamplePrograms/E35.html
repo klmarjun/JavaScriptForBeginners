@@ -1,0 +1,29 @@
+<!--Write a program to display square and cube of a number in html tables-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2" align="centre">
+        <th>Number</th>
+        <th>Square</th>
+        <th>Cube</th>
+        <script>
+            for(let i=1;i<=10;i++){
+                document.write(
+                    "<tr><td>"+
+                        i+
+                    "</td><td>"+
+                        i*i+
+                    "</td><td>"+
+                        i*i*i+
+                    "</td></tr>"
+                )
+            }
+        </script>
+    </table>
+</body>
+</html>

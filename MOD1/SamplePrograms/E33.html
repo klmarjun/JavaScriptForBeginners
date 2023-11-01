@@ -1,0 +1,33 @@
+<!--Write functions to add and subtract two numbers taken through html forms-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add and Subtract</title>
+</head>
+<body>
+    <form name="frm">
+        Number1: <input type="text" name="tb1" id="tb1"><br><br>
+        Number2: <input type="text" name="tb2" id="tb2"><br><br>
+        <input type="button" value="Add" onclick="Add(document.frm.tb1.value,document.frm.tb2.value)">
+        <input type="button" value="Sub" onclick="Sub(document.frm.tb1.value,document.frm.tb2.value)"><br>
+        Result: <input type="text" name="tb3"><br>
+    </form>
+    <script>
+        function Add(n1,n2){
+            n1 = parseInt(n1);
+            n2 = parseInt(n2);
+            document.frm.tb3.value = n1+n2;
+            console.log(n1)
+            console.log(n2)
+
+        }
+        function Sub(n1,n2){
+            n1 = parseInt(n1);
+            n2 = parseInt(n2);
+            document.frm.tb3.value = n1-n2;
+        }
+    </script>
+</body>
+</html>

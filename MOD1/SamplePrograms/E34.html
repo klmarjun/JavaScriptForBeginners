@@ -1,0 +1,21 @@
+<!--Write a JavaScript function called checker to validate the password length (Length must be 10), where username and password get through html.-->
+<html>
+    <head>
+        <title> Form input </title>
+    </head>
+<body>
+    <form name="forma">
+        username :   <input type="text" name="tb1" id="tb1"> <br> <br>
+        password :   <input type="password" name="tb2" id="tb2"> <br> <br>
+        <input type = "button" value = "CheckValidity" id = b1 onclick="Checker(tb2.value)"> <br>
+    <script>
+        function Checker(st)
+        {
+            if(st.length < 10)
+            {
+                alert(`${st.length} password length should be atmost 10 characters`)
+            }
+        }
+    </script>
+</body>
+</html>
