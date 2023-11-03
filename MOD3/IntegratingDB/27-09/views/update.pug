@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    title Update Student Details
+  body
+    h1 Update Student Data
+    form(action=`/update/${record._id}` method="POST")
+      label(for="name") Name:
+      input(type="text" name="name" value=record.name required)
+      label(for="email") Email:
+      input(type="email" name="email" value=record.email required)
+      button(type="submit") Update

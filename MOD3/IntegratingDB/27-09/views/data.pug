@@ -1,0 +1,22 @@
+html 
+    head 
+        title Students details to MongoDB 
+    body 
+    h1 submit students details to mongodb
+    form(action='/data' method='GET')
+        label(for='search') Search by Email: 
+        input(type="Email" name="search")
+        button(type="submit") Submit 
+
+    ul
+        each record in records
+            li
+                strong Name:
+                span=record.name
+                br
+                strong Email:
+                span=record.email
+                br
+                a(href=`/update/${record._id}`) Edit
+                span |
+                a(href=`/delete/${record._id}`) Delete
